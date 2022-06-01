@@ -1,26 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>%UNITY_WEB_NAME%</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.javascript"></script>
-    <script src="%UNITY_WEBGL_LOADER_URL%"></script>
-    <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "%UNITY_WEBGL_BUILD_URL%", {onProgress: UnityProgress});
-    </script>
-</head>
-<body>
-<div class="webgl-content">
-    <div id="gameContainer" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px"></div>
-</div>
-<div class="simmer">template by: <a href="https://simmer.io" target="_blank">SIMMER.io</a></div>
-<script src="TemplateData/responsive.javascript"></script>
-</body>
-=======
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -44,10 +21,9 @@
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">WORKING CAPITAL GAME</div>
-        <a href="https://www.google.com/"><img src="https://cdn.glitch.global/388e89b6-076d-4490-b8b5-e89e7e618baf/5735775.png?v=1654053644213" alt="HTML tutorial" style="width:42px;height:42px";></a>
       </div>
     </div>
-    <script>  
+    <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -119,8 +95,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "1366px";
+        canvas.style.height = "768px";
       }
 
       loadingBar.style.display = "block";
@@ -142,5 +118,4 @@
       document.body.appendChild(script);
     </script>
   </body>
-
 </html>
